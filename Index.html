@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Index</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="124d7754-8480-807c-b5d7-e26bf5041e0b" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/code_red.svg"/></div><h1 class="page-title">Index</h1><p class="page-description"></p></header><div class="page-body"><h1 id="12cd7754-8480-80ac-a01f-dd49cb30e8ba" class=""><mark class="highlight-orange"><strong>Acerca</strong></mark></h1><ol type="1" id="12cd7754-8480-80f0-8485-d000e5671d73" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Acerca de Swift 6</strong></mark></li></ol><ol type="1" id="12cd7754-8480-80f4-ac28-d06c0132ee4c" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Compatibilidad de Versiones</strong></mark></li></ol><ol type="1" id="12cd7754-8480-80ea-8c19-ca18047499cc" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Historial de Revisiones</strong></mark></li></ol><ol type="1" id="136d7754-8480-8033-82cf-ee3fba3e63cd" class="numbered-list" start="4"><li><strong>Glosario de Términos</strong> </li></ol><hr id="12cd7754-8480-80e2-bb6b-f09fa05b8868"/><h1 id="124d7754-8480-8117-863a-f3ae83047a5f" class=""><mark class="highlight-orange"><strong>The Basics</strong></mark></h1><ol type="1" id="139d7754-8480-8061-9243-e822994d62df" class="numbered-list" start="1"><li><strong>Comando Print</strong><p id="a57aed21-c00c-4352-b218-c051b9fa917b" class=""><strong>1.1 Opcionales adicionales</strong></p></li></ol><ol type="1" id="139d7754-8480-8076-9421-dbdd764977ba" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Comentarios</strong></mark></li></ol><ol type="1" id="139d7754-8480-80a4-bc91-c79d67bf842a" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Constantes y Variables</strong></mark><p id="124d7754-8480-8182-b394-d365c0fb7e9d" class=""><mark class="highlight-default"><strong>3.1 Constantes Let</strong></mark></p><p id="139d7754-8480-80fd-9fef-d5f331d9e6cf" class=""><strong>3.2 Variables Var</strong></p><p id="139d7754-8480-804c-9b32-d1148322a924" class=""><strong>3.3 Diferencias clave entre Constantes y Variables</strong></p><p id="139d7754-8480-8088-ac7b-e49236c86130" class=""><strong>3.4 Mutación de datos</strong></p><p id="139d7754-8480-8071-9b72-e651bb5397f9" class=""><strong>3.5 Declaración Múltiple</strong></p><p id="139d7754-8480-80af-aae7-f1ab5ab8daa3" class=""><strong>3.6 </strong><mark class="highlight-default"><strong>Nombrar Constantes y Variables</strong></mark></p></li></ol><ol type="1" id="139d7754-8480-805f-a78e-ed1296f15f61" class="numbered-list" start="4"><li><strong>Tipos de datos</strong><p id="139d7754-8480-8058-9cfd-cb81d1986572" class=""><strong>4.1  Enteros Int</strong><div class="indented"><p id="139d7754-8480-80b8-a84e-e5b5af46fbd1" class=""><strong>4.1.1 Subtipos de Enteros</strong></p></div></p><p id="139d7754-8480-80c7-96ba-fadd4bad2c18" class=""><strong>4.2 Decimales Double y Float</strong><div class="indented"><p id="139d7754-8480-80ee-9838-e9dd287760d5" class=""><strong>4.2.1 Conversion de numeros enteros a decimales</strong></p></div></p><p id="139d7754-8480-8010-9ed0-de8fbe2607c7" class=""><mark class="highlight-default"><strong>4.3 Cadenas de texto String</strong></mark></p><p id="139d7754-8480-80ab-b834-d29ff0ef64ff" class=""><mark class="highlight-default"><strong>4.4 Booleanos Bool</strong></mark></p><p id="139d7754-8480-8096-9b2a-f92cdc9a712d" class=""><mark class="highlight-default"><strong>4.5 Asignación multiple</strong></mark></p></li></ol><ol type="1" id="139d7754-8480-80e2-a4e5-fbb54f9611d2" class="numbered-list" start="5"><li><strong>Opcionales</strong><p id="139d7754-8480-80d7-bcd0-fdeacdb6dd52" class=""><mark class="highlight-default"><strong>5.1 Tipos de opcionales en Swift</strong></mark></p><p id="14cd7754-8480-8081-85bb-d387babe001a" class=""><strong>5.2 Custom Optional</strong></p></li></ol><ol type="1" id="139d7754-8480-800c-b5ff-c927f6415e9c" class="numbered-list" start="6"><li><mark class="highlight-default"><strong>Typealias</strong></mark><p id="139d7754-8480-8053-821f-eb4ca365a70a" class=""><mark class="highlight-default"><strong>6.1 Typealias en una Tuples </strong></mark></p><p id="139d7754-8480-8012-a278-c0b2c4cdba89" class=""><mark class="highlight-default"><strong>6.2 Typealias en colecciones</strong></mark></p><p id="139d7754-8480-804f-b0bc-c8dfc9c05421" class=""><mark class="highlight-default"><strong>6.2 Typealias de tipo de cierre (Closures)</strong></mark></p><p id="139d7754-8480-8044-9a93-fb8a90b38412" class=""><mark class="highlight-default"><strong>6.3 Typealias para tipos con Protocolos</strong></mark></p></li></ol><hr id="124d7754-8480-8015-ae0c-d1b1c88fad91"/><h1 id="124d7754-8480-8095-a67c-ca7f9724819b" class=""><mark class="highlight-orange"><strong>Basic Operators</strong></mark></h1><ol type="1" id="124d7754-8480-8033-8272-fe0d21751d30" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Operador de </strong></mark><strong>asignación</strong></li></ol><ol type="1" id="124d7754-8480-8076-bfca-d04b8fdc9048" class="numbered-list" start="2"><li><strong>Operadores aritméticos</strong><p id="125d7754-8480-80d9-8f3e-cbd253998344" class=""><strong>2.1 Operador de residuo</strong></p><p id="125d7754-8480-80fb-ae00-cbd2bdaeda64" class=""><strong>2.2 Operador unario de resta</strong></p><p id="125d7754-8480-803f-bb42-d314620aa155" class=""><strong>2.3 Operador unario de suma</strong></p></li></ol><ol type="1" id="124d7754-8480-80f3-a02a-ea4f9f266f72" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Operador de asignación compuesta</strong></mark></li></ol><ol type="1" id="124d7754-8480-80c1-b132-c76eeda1b626" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Operadores de comparación</strong></mark></li></ol><ol type="1" id="124d7754-8480-80fb-95e6-e4dd8b73f8de" class="numbered-list" start="5"><li><mark class="highlight-default"><strong>Operador condicional ternario</strong></mark></li></ol><ol type="1" id="124d7754-8480-8037-80a1-ec2b5c16006d" class="numbered-list" start="6"><li><mark class="highlight-default"><strong>Operador  nil-coalescing</strong></mark></li></ol><ol type="1" id="125d7754-8480-80c2-a18c-ca6efadae8a9" class="numbered-list" start="7"><li><strong>Operadores de rango</strong><p id="125d7754-8480-80d0-b5b4-e3a6f0cdd321" class=""><strong>7.1 Operador de rango cerrado</strong></p><p id="125d7754-8480-8019-9ae0-efba0c08ccf6" class=""><strong>7.2 Operador de rango semiabierto</strong></p><p id="125d7754-8480-8091-8b77-e5eef27940bf" class=""><strong>7.3 Rangos unilaterales</strong></p></li></ol><ol type="1" id="125d7754-8480-8019-982a-ea8fb60d9417" class="numbered-list" start="8"><li><strong>Operadores lógicos</strong><p id="125d7754-8480-801f-b735-fe851ee4dc7e" class=""><strong>8.1 Operador lógico NO</strong></p><p id="125d7754-8480-80a5-a0fc-dbc064227e89" class=""><strong>8.2 Operador lógico Y</strong></p><p id="125d7754-8480-80b3-b34a-ea54ba8c559c" class=""><strong>8.3 Operador lógico O</strong></p><p id="125d7754-8480-806e-a458-f5b404d58250" class=""><strong>8.4 Combinación de operadores lógicos</strong></p><p id="125d7754-8480-80e4-88cb-cfa71158fd55" class=""><strong>8.5 Paréntesis explícitos</strong></p></li></ol><hr id="125d7754-8480-806a-9e6d-f9115d7ec4d6"/><h1 id="125d7754-8480-801e-85e1-eafe492a6e62" class=""><mark class="highlight-orange"><strong>String and Characters</strong></mark></h1><ol type="1" id="125d7754-8480-80a3-b6f5-d3523692661f" class="numbered-list" start="1"><li><strong>Literales de cadena</strong><p id="125d7754-8480-8004-8b0e-dd69d1b5173b" class=""><strong>1.1 Literales de cadena de varias líneas</strong></p><p id="125d7754-8480-8093-97fa-c5ee9b0fda30" class=""><strong>1.2 Caracteres especiales en literales de cadena</strong></p></li></ol><ol type="1" id="125d7754-8480-8045-8526-e20a759e7510" class="numbered-list" start="2"><li><strong>Inicializando una cadena vacía</strong></li></ol><ol type="1" id="125d7754-8480-80d0-84cb-d74a97604ad3" class="numbered-list" start="3"><li><strong>Mutabilidad de una cadena</strong></li></ol><ol type="1" id="125d7754-8480-80ec-98a2-f7a93917c7d9" class="numbered-list" start="4"><li><strong>Trabajando con caracteres</strong></li></ol><ol type="1" id="125d7754-8480-80b5-b1a6-ee76e2a6aca5" class="numbered-list" start="5"><li><strong>Concatenación de cadenas y caracteres</strong></li></ol><ol type="1" id="125d7754-8480-80f7-a91b-ffa92f0520a6" class="numbered-list" start="6"><li><strong>Interpolación de cadenas</strong></li></ol><ol type="1" id="125d7754-8480-8087-a6d6-d941299379b0" class="numbered-list" start="7"><li><strong>Unicode</strong></li></ol><ol type="1" id="125d7754-8480-809f-a859-f8000b0daccc" class="numbered-list" start="8"><li><strong>Conteo de caracteres</strong></li></ol><ol type="1" id="125d7754-8480-80f9-9940-c3a53c9dff05" class="numbered-list" start="9"><li><strong>Comparación de cadenas</strong><p id="125d7754-8480-80cd-a45f-f415ba23c982" class=""><strong>9.1 Igualdad de cadenas y caracteres</strong></p><p id="125d7754-8480-80c1-ae4f-c6a3d3eb003f" class=""><strong>9.2 Igualdad de prefijo y sufijo</strong></p></li></ol><hr id="125d7754-8480-808e-b567-ce61c3eb9f17"/><h1 id="125d7754-8480-8088-920e-dcce038f0db2" class=""><mark class="highlight-orange"><strong>Collection Types</strong></mark></h1><p id="139d7754-8480-804c-8388-fb6d84599a4a" class=""><strong>1. Tuples</strong><div class="indented"><p id="139d7754-8480-80ad-bb13-d909a85e2524" class=""><mark class="highlight-default"><strong>1.1 </strong></mark><strong>Tuples con nombres para los elementos</strong></p><p id="13ad7754-8480-80b1-8c8b-fb4a2088f56d" class=""><mark class="highlight-default"><strong>1.2 Usos y utilidades de las Tuples</strong></mark></p><p id="13ad7754-8480-80bf-8c9e-c9ed66737d7b" class=""><strong>1.3 Ventajas y limitaciones de las </strong><mark class="highlight-default"><strong>Tuples</strong></mark></p><p id="13ad7754-8480-80d1-b2e4-c9623b5c3565" class=""><mark class="highlight-default"><strong>1.4 Cuándo usar las Tuples</strong></mark></p></div></p><p id="33c6ff3d-8702-4010-94d5-75a8611d978c" class=""><strong>2. Array</strong><div class="indented"><p id="fee23eed-0e1f-499c-a260-a0b3462568d5" class=""><mark class="highlight-default"><strong>2.1 Creación de Array</strong></mark></p><p id="4ff4b73a-d01f-4b61-8997-36f35f42af54" class=""><mark class="highlight-default"><strong>2.2 Propiedades de los Array</strong></mark></p><p id="139d7754-8480-8055-b2fa-e6c62c1c4021" class=""><mark class="highlight-default"><strong>2.3 Acceso y Modificación de Elementos</strong></mark></p><p id="139d7754-8480-8034-96ce-f19642dc0aa1" class=""><mark class="highlight-default"><strong>2.4 Métodos de Manipulación de Array</strong></mark></p><p id="139d7754-8480-8044-b1ec-fd990aaf4f1c" class=""><mark class="highlight-default"><strong>2.5 Iteración sobre Array</strong></mark></p><p id="139d7754-8480-80f2-85c6-ef90c2dc9920" class=""><mark class="highlight-default"><strong>2.6 Arrays Inmutables</strong></mark></p><p id="139d7754-8480-8049-a546-d110b8a8b7e2" class=""><mark class="highlight-default"><strong>2.7 Otras Operaciones y Funcionalidades Avanzadas</strong></mark></p></div></p><ol type="1" id="125d7754-8480-80c9-95ba-d0ea5ee77faa" class="numbered-list" start="3"><li><strong>Set</strong><p id="13ad7754-8480-802a-b49b-c2561f69ac06" class=""><strong>3.1 Creación de un Set</strong></p><p id="13ad7754-8480-80c4-abe3-fb93764c2707" class=""><strong>3.2 Propiedades de un Set</strong></p><p id="13ad7754-8480-8000-8ed5-d617fd83fe91" class=""><strong>3.3 Métodos Comunes</strong><div class="indented"><p id="13ad7754-8480-808f-bf82-ec6d9aab7c8b" class=""><strong>3.3.1 Agregar y Eliminar Elementos</strong></p><p id="13ad7754-8480-8075-a269-d8f32055b233" class=""><strong>3.3.2 Operaciones de Conjunto</strong></p><p id="13ad7754-8480-8075-a5a2-f87387b19112" class=""><strong>3.3.3 Comparación de Conjuntos</strong></p><p id="13ad7754-8480-80a6-8eaa-c92ba6da6b9e" class=""><strong>3.3.4 </strong><mark class="highlight-default"><strong>Iteración</strong></mark></p></div></p></li></ol><ol type="1" id="125d7754-8480-8048-a64c-fc38c12e6699" class="numbered-list" start="4"><li><strong>Dictionary</strong><p id="13ad7754-8480-80f4-8fc0-eb107f763191" class=""><mark class="highlight-default"><strong>4.1 Creación de un Dictionary</strong></mark></p><p id="13ad7754-8480-8047-9b22-d6930c435b29" class=""><strong>4.2 </strong><mark class="highlight-default"><strong>Propiedades de los Dictionary</strong></mark></p><p id="13ad7754-8480-8032-995b-f66d3fb93af0" class=""><mark class="highlight-default"><strong>4.3 Acceso y Modificación de Valores</strong></mark></p><p id="13ad7754-8480-804e-b285-e4fdb6e6acfe" class=""><mark class="highlight-default"><strong>4.4 Métodos Comunes</strong></mark></p><p id="13ad7754-8480-8045-b518-c4377937c80c" class=""><mark class="highlight-default"><strong>4.5 Iteración</strong></mark></p></li></ol><hr id="125d7754-8480-80c0-8700-f7e70378a69c"/><h1 id="169d7754-8480-8030-bc55-c282f7fee13f" class=""><mark class="highlight-orange">Control Flow</mark></h1><ol type="1" id="14cd7754-8480-808a-b029-cb575d86ab87" class="numbered-list" start="1"><li><strong>Condicionales</strong><p id="14cd7754-8480-80e0-8fdd-eb230ab5d3cd" class=""><strong>1.1 If</strong><div class="indented"><p id="14cd7754-8480-808d-b5ae-ef41128b2051" class=""><strong>1.1.1 Else</strong></p><p id="14cd7754-8480-80e2-8520-ec274b2423a0" class=""><strong>1.1.2 Else if - Else</strong></p><p id="14cd7754-8480-80ec-b2df-e769c311ef73" class=""><strong>1.1.3</strong><mark class="highlight-default"><strong> Uso de condicionales con múltiples condiciones</strong></mark></p><p id="14cd7754-8480-8082-b7af-dd24bc06d64e" class=""><strong>1.1.4 Operador ternario</strong></p></div></p><p id="14cd7754-8480-8027-ae9b-f4c03234d852" class=""><strong>1.2 Switch</strong><div class="indented"><p id="14cd7754-8480-8097-ba76-fffbd7aaebe0" class=""><strong>1.2.1 Uso de Rangos</strong></p><p id="14cd7754-8480-808c-b3cf-ed7e42062e4c" class=""><strong>1.2.2 Coincidencia con Tuples</strong></p><p id="14cd7754-8480-807d-b3ac-eb260fe0868f" class=""><strong>1.2.3 </strong><mark class="highlight-default"><strong>Múltiples </strong></mark><strong> valores en un Case</strong></p><p id="14cd7754-8480-80ed-bf46-cc438a88c621" class=""><strong>1.2.4 Where</strong></p><p id="14cd7754-8480-80f9-ba52-c5810ed1bf4e" class=""><strong>1.2.5 As</strong></p><p id="14cd7754-8480-8078-8d0d-e36c3ea63821" class=""><strong>1.2.6 Where y As</strong></p><p id="14cd7754-8480-8019-a900-f8ae86230ae7" class=""><strong>1.2.7 Casos específico en un Enum</strong></p></div></p><p id="14cd7754-8480-80ad-9b26-dfb336dad8bd" class=""><strong>1.3 Guard</strong><div class="indented"><p id="14cd7754-8480-8042-a481-fef9ebf3c1d2" class=""><strong>1.3.1 Return, Break o Continue</strong></p><p id="14cd7754-8480-80f9-9b36-d17a94542eb6" class=""><strong>1.3.2 En un Func</strong></p><p id="14cd7754-8480-80b1-a63c-dd1ecee4f278" class=""><strong>1.3.3 Utilizando un Closure</strong></p><p id="14cd7754-8480-80c6-b0c7-cebc1945fcff" class=""><strong>1.3.4 En un Struct</strong></p></div></p></li></ol><ol type="1" id="14cd7754-8480-80e1-991b-e0059ba61710" class="numbered-list" start="2"><li><strong>Bucles</strong><p id="14cd7754-8480-809d-8d6f-dd2c56e4653c" class=""><strong>2.1 For-in</strong></p><p id="14cd7754-8480-8087-a5db-d4759334e769" class=""><strong>2.2 While</strong></p><p id="14cd7754-8480-801e-a7b1-c97ff059c47a" class=""><strong>2.3 Repeat-While</strong></p><p id="14cd7754-8480-802b-847e-f876a1347a23" class=""><strong>2.4 Con condicionales</strong></p><p id="14cd7754-8480-80e2-8677-e1b3dc33df61" class=""><strong>2.5 Con tipos y sus propiedades</strong><div class="indented"><p id="14cd7754-8480-807c-bf39-dc92d1006248" class=""><strong>2.5.1 String</strong></p><p id="14cd7754-8480-80ac-8e23-ceab1e937e59" class=""><strong>2.5.2 Array</strong></p><p id="14cd7754-8480-8077-ac12-c9c6044d1d52" class=""><strong>2.5.3 Set</strong></p><p id="14cd7754-8480-80eb-9114-c608fc7cbedd" class=""><strong>2.5.4 Dictionary</strong></p><p id="14cd7754-8480-806b-9450-e24ffaa6cfb0" class=""><strong>2.5.5 Tuples</strong></p></div></p><p id="14cd7754-8480-80a5-9f62-ca7a7ba6805e" class=""><strong>2.6 Sobre un Struct</strong></p><p id="14cd7754-8480-8069-a8d3-d41e0adec74e" class=""><strong>2.7 Sobre un Enum</strong></p></li></ol><hr id="ec7be243-adcf-42f2-a7b0-4d53ebf9ce09"/><h1 id="125d7754-8480-80b5-82b7-df668f4748f3" class=""><mark class="highlight-orange"><strong>Functions</strong></mark></h1><ol type="1" id="a835aea9-edaa-45b7-b4a8-800bf9dd8c3a" class="numbered-list" start="1"><li><strong>Definición de funciones</strong></li></ol><ol type="1" id="095f8159-0f11-4dd2-9a4e-1b59c3bfa1cf" class="numbered-list" start="2"><li><strong>Funciones con valor de retorno</strong></li></ol><ol type="1" id="32e72b0e-93f0-455d-98a1-1e9dd77a6b78" class="numbered-list" start="3"><li><strong>Funciones sin parámetros ni retorno</strong></li></ol><ol type="1" id="8877a82a-58b6-494e-bb26-bd31531e656d" class="numbered-list" start="4"><li><strong>Funciones con parámetros Opcionales</strong></li></ol><ol type="1" id="6c1fd726-4f52-4794-b39e-5feb4c14b1e4" class="numbered-list" start="5"><li><strong>Funciones con valores de defecto</strong></li></ol><ol type="1" id="dcb3fc78-041a-4bc4-b058-1363eda1a479" class="numbered-list" start="6"><li><strong>Funciones con Variadic Parameters</strong></li></ol><ol type="1" id="03a89dfb-bf96-4a89-82a8-c21b3d4484d3" class="numbered-list" start="7"><li><strong>Funciones Anidadas</strong></li></ol><ol type="1" id="3d8edd86-46f5-44df-8c44-66cdd1eaae64" class="numbered-list" start="8"><li><strong>Funciones de Orden Superior</strong></li></ol><ol type="1" id="34ddeb93-4239-4331-bd36-2a171bbfe580" class="numbered-list" start="9"><li><strong>Closures como funciones</strong></li></ol><ol type="1" id="3544c7b3-dd23-494f-a0c8-9b5f5f089e45" class="numbered-list" start="10"><li><strong>Funciones Asincronas</strong></li></ol><ol type="1" id="7e89a395-a98b-4fcb-9785-c227c8722db7" class="numbered-list" start="11"><li><strong>Funciones inout</strong></li></ol><hr id="14cd7754-8480-8043-a636-fc63b947e846"/><h1 id="169d7754-8480-8002-a400-f2ac12fc836a" class=""><mark class="highlight-orange"><strong>Closures</strong></mark></h1><ol type="1" id="169d7754-8480-802f-8a07-c944e87a6916" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Características de los Closures</strong></mark></li></ol><ol type="1" id="169d7754-8480-8036-9313-ccfd2b7366fd" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Closures como Parámetros</strong></mark></li></ol><ol type="1" id="169d7754-8480-802d-b0bf-f63fb709b577" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Optimización de Sintaxis (Trailing Closure)</strong></mark></li></ol><ol type="1" id="169d7754-8480-8065-b5ba-de86189a3af6" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Closures que Capturan Valores</strong></mark></li></ol><ol type="1" id="169d7754-8480-80d4-95b8-f036ff6cee1f" class="numbered-list" start="5"><li><mark class="highlight-default"><strong>Closures Escapantes</strong></mark></li></ol><ol type="1" id="169d7754-8480-80dd-95b1-edd96309b662" class="numbered-list" start="6"><li><mark class="highlight-default"><strong>Autoclosures</strong></mark></li></ol><hr id="169d7754-8480-80df-99c0-c418202bef62"/><h1 id="169d7754-8480-80b4-bead-f3995aa2d0a4" class=""><mark class="highlight-orange">Enumerations</mark></h1><ol type="1" id="169d7754-8480-803c-8434-f4b4dd2b1094" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Sintaxis</strong></mark></li></ol><ol type="1" id="169d7754-8480-80fe-918e-edc6babb6079" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Valores asociados</strong></mark></li></ol><ol type="1" id="169d7754-8480-8081-88e4-f708c5f958ff" class="numbered-list" start="3"><li><strong>Valores por defecto (raw values)</strong></li></ol><ol type="1" id="169d7754-8480-803a-a6c0-f6babab8a72c" class="numbered-list" start="4"><li><strong>Métodos en enums</strong></li></ol><ol type="1" id="169d7754-8480-80eb-88d1-e96128b6ac13" class="numbered-list" start="5"><li><strong>Propiedades calculadas</strong></li></ol><ol type="1" id="169d7754-8480-80c5-b9d9-c7dd6c590cbd" class="numbered-list" start="6"><li><strong>Configuraciones avanzadas</strong><p id="d8f8d18a-4993-40ca-ac58-15ae3ef1a1a9" class=""><mark class="highlight-default"><strong>6.1 Enum con protocolo</strong></mark></p><p id="0c77441e-8646-4bb8-8d9f-f2cb14314db5" class=""><mark class="highlight-default"><strong>6.2 Enum con rawValue implícito</strong></mark></p></li></ol><ol type="1" id="169d7754-8480-8076-ab86-d3212694e860" class="numbered-list" start="7"><li><strong>Enumeraciones recursivas</strong></li></ol><hr id="169d7754-8480-8027-a1d2-f20701ab5cad"/><h1 id="14ed7754-8480-80f3-8f1d-f6ed374bfd39" class=""><mark class="highlight-orange"><strong>Structures and Classes</strong></mark></h1><ol type="1" id="14ed7754-8480-80b1-989d-d4a8d5592f0c" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Similitudes entre Class y Struct</strong></mark></li></ol><ol type="1" id="14ed7754-8480-80a9-a0f9-e344b3ee4a41" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Diferencias clave</strong></mark></li></ol><ol type="1" id="14ed7754-8480-80b5-b15a-d3ab8d08cc79" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Sintaxis de una Class</strong></mark></li></ol><ol type="1" id="14ed7754-8480-8018-bf73-f7c3f34a1cd6" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Sintaxis de una Struct</strong></mark></li></ol><ol type="1" id="14ed7754-8480-804d-954a-df280885b444" class="numbered-list" start="5"><li><strong>Cuándo usar Class o Struct</strong></li></ol><ol type="1" id="14ed7754-8480-804a-ae2b-fd9637451157" class="numbered-list" start="6"><li><strong>Inicializadores</strong></li></ol><ol type="1" id="14ed7754-8480-8056-b167-eed7a05b2b5d" class="numbered-list" start="7"><li><strong>Uso de herencia en Class</strong></li></ol><ol type="1" id="14ed7754-8480-8051-8568-db8a3e886b02" class="numbered-list" start="8"><li><strong>Propiedades y Métodos</strong></li></ol><hr id="169d7754-8480-80db-a540-e7b0987340e0"/><h1 id="14ed7754-8480-8065-ba55-fd1c49ee2bbc" class=""><mark class="highlight-orange"><strong>Properties</strong></mark></h1><ol type="1" id="14ed7754-8480-80d2-bf81-de1f6df368b7" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Tipos de propiedades</strong></mark><p id="14ed7754-8480-807e-8594-c7a174089139" class=""><mark class="highlight-default"><strong>1.1 Propiedades almacenadas (Stored Properties)</strong></mark></p><p id="14ed7754-8480-8018-95f0-eff396d4357d" class=""><mark class="highlight-default"><strong>1.2 Propiedades calculadas (Computed Properties)</strong></mark></p><p id="14ed7754-8480-80d3-9ff2-f772350aa057" class=""><strong>1.3</strong><mark class="highlight-default"><strong> Propiedades de clase (Type Properties)</strong></mark></p></li></ol><ol type="1" id="14ed7754-8480-80a8-9152-dd4f929ae99b" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Observadores de propiedades</strong></mark></li></ol><ol type="1" id="14ed7754-8480-8011-bfbb-c6c1f04bdb08" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Lazy Properties</strong></mark></li></ol><ol type="1" id="14ed7754-8480-80e8-ba36-d9e6b68bbe2c" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Sintaxis con propiedades de acceso personalizado</strong></mark></li></ol><ol type="1" id="14ed7754-8480-80e6-aa84-d418a045d46f" class="numbered-list" start="5"><li><mark class="highlight-default"><strong>Métodos y propiedades</strong></mark></li></ol><ol type="1" id="14ed7754-8480-80d0-bff9-e79ebef59fc4" class="numbered-list" start="6"><li><mark class="highlight-default"><strong>Modificadores de propiedades</strong></mark><p id="14ed7754-8480-8012-8d63-ea66b49b93cd" class=""><mark class="highlight-default"><strong>6.1. Private y Public</strong></mark></p><p id="14ed7754-8480-80e4-88c3-f26aaa7ed8d3" class=""><strong>6.2 Final</strong></p><p id="14ed7754-8480-80c6-85a1-fb45bd3b1e4b" class=""><mark class="highlight-default"><strong>6.3 Otros Modificadores de Acceso</strong></mark></p></li></ol><hr id="14ed7754-8480-8041-a4c5-d7f09d25ab4d"/><h1 id="14ed7754-8480-8018-81b2-d06a1c122bfd" class=""><mark class="highlight-orange"><strong>Methods</strong></mark></h1><ol type="1" id="14ed7754-8480-80ea-8e5a-c4fcc47653c7" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Tipos de Métodos</strong></mark><p id="14ed7754-8480-80be-aec2-cb657686ed20" class=""><mark class="highlight-default"><strong>1.1 Métodos de instancia</strong></mark></p><p id="14ed7754-8480-80bd-ba86-d61838862159" class=""><mark class="highlight-default"><strong>1.2 Métodos estáticos o de tipo</strong></mark></p><p id="14ed7754-8480-80c4-890e-f70c787bfe80" class=""><mark class="highlight-default"><strong>1.3 Métodos mutantes (mutating)</strong></mark></p></li></ol><ol type="1" id="14ed7754-8480-801e-934e-c7a5503cb478" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Propiedades Computadas y Métodos Relacionados</strong></mark></li></ol><ol type="1" id="14ed7754-8480-802c-bb97-d51069bb944d" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Parámetros y Retorno en Métodos</strong></mark></li></ol><ol type="1" id="14ed7754-8480-80d9-ba62-e2b24a8251f8" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Métodos y Self</strong></mark></li></ol><ol type="1" id="14ed7754-8480-8048-8f33-ee3c3bd71e1a" class="numbered-list" start="5"><li><mark class="highlight-default"><strong>Encadenamiento de Métodos</strong></mark></li></ol><ol type="1" id="14ed7754-8480-80ae-a54a-dac20d7c6922" class="numbered-list" start="6"><li><strong>Configuraciones Adicionales</strong><p id="14ed7754-8480-8001-8a7c-d5d941ea4a2c" class=""><mark class="highlight-default"><strong>6.1 Sobrecarga de métodos</strong></mark></p><p id="14ed7754-8480-80e9-a985-ddbee446d1b2" class=""><mark class="highlight-default"><strong>6.2 Métodos predeterminados (default methods)</strong></mark></p></li></ol><hr id="14ed7754-8480-808f-bacc-fd176fc8383d"/><h1 id="169d7754-8480-8067-be63-e859d0e4778a" class=""><mark class="highlight-orange">Subscripts</mark></h1><ol type="1" id="169d7754-8480-809c-9e53-cbbd417c4382" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>¿Qué son los Subscripts?</strong></mark><p id="169d7754-8480-8028-8821-db5042bff8f2" class=""><strong>1.1 </strong><mark class="highlight-default"><strong>Definición Básica de un Subscript</strong></mark></p><p id="169d7754-8480-8049-b394-c4a9afea8ec1" class=""><mark class="highlight-default"><strong>1.2 Subscript en una Clase</strong></mark></p><p id="169d7754-8480-80b1-ab6c-fdad740f5844" class=""><mark class="highlight-default"><strong>1.3 Subscript en una Estructura</strong></mark></p><p id="169d7754-8480-8092-ba84-ddc0e5571685" class=""><mark class="highlight-default"><strong>1.4 Subscript de Solo Lectura</strong></mark></p></li></ol><p id="169d7754-8480-8081-a2cc-ff33b9d51f67" class=""><mark class="highlight-default"><strong>2. Usos Comunes</strong></mark></p><hr id="14ed7754-8480-8069-ac86-eb6c7df43aa6"/><h1 id="14ed7754-8480-80a4-a7f0-e37e420eb00d" class=""><mark class="highlight-orange">Inheritance</mark></h1><ol type="1" id="169d7754-8480-8041-b398-d027d3e9ac1c" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Declaración de una superclase y una subclase</strong></mark><p id="7f2add7c-211d-40a0-bca5-5fc6d4313b51" class=""><strong>1.1 Superclase</strong></p><p id="a06c0b6b-2f65-4a30-bced-0d950d21d05b" class=""><strong>1.2 Subclase </strong></p></li></ol><ol type="1" id="169d7754-8480-80fd-99c3-f1a9b6216f47" class="numbered-list" start="2"><li><strong>Aspectos clave</strong></li></ol><hr id="169d7754-8480-8094-92ea-cdb6a0c6bdc9"/><h1 id="169d7754-8480-802e-b637-db64b3e7855c" class=""><mark class="highlight-orange">Initialization</mark></h1><ol type="1" id="169d7754-8480-80aa-b4c0-f302659784f1" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Características principales</strong></mark></li></ol><ol type="1" id="169d7754-8480-8092-abb9-d6a68bd72f8d" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Tipos de inicializadores</strong></mark><p id="169d7754-8480-8066-8db9-f720e264c43c" class=""><mark class="highlight-default"><strong>2.1 Inicializador por defecto con estructuras</strong></mark></p><p id="169d7754-8480-8033-b60b-f5e66d614c60" class=""><mark class="highlight-default"><strong>2.2 Inicializador personalizado</strong></mark></p><p id="169d7754-8480-80e8-8f57-f279091493bf" class=""><mark class="highlight-default"><strong>2.3 inicializadores de conveniencia</strong></mark></p><p id="169d7754-8480-8027-8e67-fd4ad51056c8" class=""><mark class="highlight-default"><strong>2.4 Failable Initializer</strong></mark></p></li></ol><hr id="169d7754-8480-800e-8cd2-d0696e052c59"/><h1 id="169d7754-8480-8004-8280-f28bcca97d0a" class=""><mark class="highlight-orange">Deinitialization</mark></h1><ol type="1" id="169d7754-8480-80f5-a6f8-c243def5b962" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Características clave de DEINIT</strong></mark></li></ol><ol type="1" id="169d7754-8480-8045-8bd3-d3c2e0c3aba8" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Consideraciones sobre ciclos de referencia</strong></mark></li></ol><ol type="1" id="169d7754-8480-80ba-859c-e934466b083c" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Comparación de Weak y Unowned</strong></mark></li></ol><hr id="169d7754-8480-80f7-8a64-eb9ab303b301"/><h1 id="169d7754-8480-80e9-88c4-e2c29e3e36cb" class=""><mark class="highlight-orange">Optional Chaining</mark></h1><ol type="1" id="169d7754-8480-800b-ab44-fb736eb1991f" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Acceso a Propiedades de un Opcional</strong></mark></li></ol><ol type="1" id="169d7754-8480-80cc-94ed-f3130a92f64b" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Llamadas a Métodos</strong></mark></li></ol><ol type="1" id="169d7754-8480-80bf-b6d4-d7249ce14ec3" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Encadenamiento de Opcionales Anidados</strong></mark></li></ol><ol type="1" id="169d7754-8480-80b8-bf5f-f6eb09e69e8f" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Subscripts</strong></mark></li></ol><hr id="169d7754-8480-8078-b30b-f61eae23dc8b"/><h1 id="169d7754-8480-80d9-a7e4-eb25a066a57d" class=""><mark class="highlight-orange">Error Handling</mark></h1><ol type="1" id="169d7754-8480-80a9-b68f-d22e9494a072" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Conceptos Básicos</strong></mark></li></ol><ol type="1" id="169d7754-8480-800e-adbc-d1e576920931" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Definir y Lanzar Errores</strong></mark></li></ol><ol type="1" id="169d7754-8480-8033-bee1-e7700dc8d5f9" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Propagar Errores</strong></mark></li></ol><ol type="1" id="169d7754-8480-802b-99a1-e4163b862364" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Usar TRY? para Manejo Seguro</strong></mark></li></ol><ol type="1" id="169d7754-8480-80f1-a680-c6e630d8702f" class="numbered-list" start="5"><li><mark class="highlight-default"><strong>TRY! para Errores No Controlados</strong></mark></li></ol><ol type="1" id="169d7754-8480-8099-b19a-d0b566101f0c" class="numbered-list" start="6"><li><mark class="highlight-default"><strong>Personalizar Errores</strong></mark></li></ol><hr id="169d7754-8480-8095-bf07-e6f0e04aefbb"/><h1 id="169d7754-8480-807b-aa2e-fe6363097d10" class=""><mark class="highlight-orange">Concurrency</mark></h1><ol type="1" id="169d7754-8480-80e1-b167-e6760e9e983f" class="numbered-list" start="1"><li><strong>Introducción al modelo de concurrencia moderno de Swift</strong></li></ol><ol type="1" id="169d7754-8480-80e4-8381-ffedbbbc196b" class="numbered-list" start="2"><li><strong>Ejemplo básico: Async y Await</strong></li></ol><ol type="1" id="169d7754-8480-80d2-a902-cfa6dc00e261" class="numbered-list" start="3"><li><strong>Ejecución concurrente con Async let</strong></li></ol><ol type="1" id="169d7754-8480-80c4-8142-c55e26962b68" class="numbered-list" start="4"><li><strong>Uso de Taskgroup para múltiples tareas dinámicas</strong></li></ol><ol type="1" id="169d7754-8480-806e-8682-ccd5e2837db2" class="numbered-list" start="5"><li><strong>Manejo seguro de estados compartidos con Actor</strong></li></ol><ol type="1" id="169d7754-8480-8000-8186-d25f8eb1fba5" class="numbered-list" start="6"><li><strong>Uso del Main Actor para actualizar la UI</strong></li></ol><ol type="1" id="169d7754-8480-807f-937c-f81d1ebb2087" class="numbered-list" start="7"><li><strong>Ejemplo avanzado: Progresión y cancelación</strong></li></ol><ol type="1" id="169d7754-8480-808e-88ba-d089dbb2d639" class="numbered-list" start="8"><li><mark class="highlight-default"><strong>Uso de DispatchQueue (modelo antiguo)</strong></mark></li></ol><hr id="169d7754-8480-801a-8002-c843dd5d6c6e"/><h1 id="169d7754-8480-8007-874b-dee14e4f56bb" class=""><mark class="highlight-orange">Macros</mark></h1><ol type="1" id="169d7754-8480-80ad-b966-f1f8059a5859" class="numbered-list" start="1"><li><strong>Tipos de Macros en Swift</strong><p id="169d7754-8480-8037-af4b-f9e5ded28a76" class=""><strong>1.1 Macro de Propiedades Automáticas</strong></p><p id="169d7754-8480-80e9-a8b6-f83f3454d1fb" class=""><strong>1.2 Macro para Logs Automáticos</strong></p><p id="169d7754-8480-8001-ad5d-dafab7666496" class=""><strong>1.3 Macro para Validación</strong></p></li></ol><ol type="1" id="169d7754-8480-8066-97eb-f2f3c869f436" class="numbered-list" start="2"><li><strong>Uso Práctico</strong></li></ol><hr id="169d7754-8480-80fb-9e2e-cf83a0e06fc3"/><h1 id="169d7754-8480-804b-8a9e-e39adae27ea4" class=""><mark class="highlight-orange">Types Casting</mark></h1><ol type="1" id="169d7754-8480-80f7-a188-e939fb7a59d0" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Operadores principales de Type Casting</strong></mark><p id="169d7754-8480-8050-a993-e03d75ea4241" class=""><mark class="highlight-default"><strong>1.1 Comprobación de tipos con IS</strong></mark></p><p id="169d7754-8480-80f9-b688-edcde9801e78" class=""><mark class="highlight-default"><strong>1.2 Casting condicional con AS?</strong></mark></p><p id="169d7754-8480-80bc-889b-ec1c539514ff" class=""><mark class="highlight-default"><strong>1.3 Casting forzado con AS!</strong></mark></p><p id="169d7754-8480-808f-8e78-e787e3c9e77b" class=""><mark class="highlight-default"><strong>1.4 Uso de ANY y ANYOBJECT con Type Casting</strong></mark></p></li></ol><hr id="169d7754-8480-80a5-8f3e-f86c7cd03036"/><h1 id="169d7754-8480-8069-aaa0-c35c0d3cafc0" class=""><mark class="highlight-orange">Nested Types</mark></h1><ol type="1" id="169d7754-8480-80b8-ba78-fb2cdbf3b2fb" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Casos de Uso Comunes</strong></mark></li></ol><ol type="1" id="169d7754-8480-8089-914b-e37e980cafa3" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Básico de Tipos Anidados</strong></mark></li></ol><ol type="1" id="169d7754-8480-80a8-939e-d38eafe9e815" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Tipos Anidados en Enumeraciones</strong></mark></li></ol><ol type="1" id="169d7754-8480-80bc-a136-fb186becbe2b" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Anidación en Clases</strong></mark></li></ol><ol type="1" id="169d7754-8480-80d8-8a61-fe3909ddd65f" class="numbered-list" start="5"><li><mark class="highlight-default"><strong>Acceso a Tipos Anidados</strong></mark></li></ol><hr id="169d7754-8480-80f7-bd58-c0cae6a4e22d"/><h1 id="169d7754-8480-808f-bbcc-c01e86f67497" class=""><mark class="highlight-orange"><strong>Extensions</strong></mark></h1><ol type="1" id="169d7754-8480-80f4-89b5-f132dded8263" class="numbered-list" start="1"><li><strong>Sintaxis</strong></li></ol><ol type="1" id="169d7754-8480-80c0-ae5a-ed26c1d9a86a" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Usos principales de las extensiones</strong></mark><p id="2e554b34-b684-4f15-9c19-0002f3197665" class=""><strong>2.1 Métodos y Propiedades</strong></p><p id="381e06e1-b94e-45ce-9c8c-640190dc2e19" class=""><strong>2.2 Inicializadores</strong></p><p id="a6de0a63-abd3-476d-a8de-35d88d73c4f2" class=""><strong>2.3 Conformidad a Protocolos</strong></p><p id="bc55d533-9be7-4144-876d-faebfc7bc51c" class=""><strong>2.4 Subscripts</strong></p><p id="b8046bbc-07f3-4613-86cb-4a9f2223327b" class=""><strong>2.5 Restricciones con Genéricos</strong></p></li></ol><ol type="1" id="169d7754-8480-80c8-a4e1-cb07f2d73a20" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Limitaciones de las Extensiones</strong></mark></li></ol><hr id="169d7754-8480-8016-a25f-e78de04765f0"/><h1 id="169d7754-8480-8047-8e39-dbdf10969b65" class=""><mark class="highlight-orange"><strong>Protocols</strong></mark></h1><ol type="1" id="169d7754-8480-80a3-adea-d8c0541c344f" class="numbered-list" start="1"><li><strong>Declaración de un Protocolo</strong></li></ol><ol type="1" id="169d7754-8480-809d-a464-f49ce2e98890" class="numbered-list" start="2"><li><strong>Conformidad a Protocolos</strong></li></ol><ol type="1" id="169d7754-8480-8023-8892-ff07c5f6230c" class="numbered-list" start="3"><li><strong>Propiedades en Protocolos</strong></li></ol><ol type="1" id="169d7754-8480-807a-bbd4-e83e1219fd4d" class="numbered-list" start="4"><li><strong>Métodos en Protocolos</strong></li></ol><ol type="1" id="169d7754-8480-80a7-a281-e9bcd97ca0c7" class="numbered-list" start="5"><li><strong>Requisitos Inicializadores</strong></li></ol><ol type="1" id="169d7754-8480-80bf-96cc-f5ba92524a64" class="numbered-list" start="6"><li><strong>Extensiones de Protocolos</strong></li></ol><ol type="1" id="169d7754-8480-80d7-829d-e87d26e9e91a" class="numbered-list" start="7"><li><strong>Delegación</strong></li></ol><ol type="1" id="169d7754-8480-80c7-a601-d4f6b7990c7b" class="numbered-list" start="8"><li><strong>Protocolos con Asociated Types</strong></li></ol><ol type="1" id="169d7754-8480-80fb-bb9d-f5dbac4b4b3a" class="numbered-list" start="9"><li><strong>Uso en Colecciones</strong></li></ol><ol type="1" id="169d7754-8480-80b6-b945-c0e026ec8691" class="numbered-list" start="10"><li><strong>Protocolos Compuestos</strong></li></ol><hr id="169d7754-8480-80e6-b329-dd3304fe9565"/><h1 id="169d7754-8480-80f7-bf0a-fba43e6ce1b9" class=""><mark class="highlight-orange"><strong>Generics</strong></mark></h1><ol type="1" id="169d7754-8480-800f-bdc1-e9d9984f8fe1" class="numbered-list" start="1"><li><strong>Sintaxis Básica y Declaración</strong></li></ol><ol type="1" id="169d7754-8480-8027-bd69-eb46ff54ed87" class="numbered-list" start="2"><li><strong>Tipos Genéricos</strong></li></ol><ol type="1" id="169d7754-8480-80ec-bc01-c9c5662d7f17" class="numbered-list" start="3"><li><strong>Funciones Genéricas</strong></li></ol><ol type="1" id="169d7754-8480-80bb-ad77-c3c45f8307ad" class="numbered-list" start="4"><li><strong>Restricciones (Requisitos de Tipo)</strong></li></ol><ol type="1" id="169d7754-8480-8050-8a17-cdad957ed8b1" class="numbered-list" start="5"><li><strong>Propiedades y Métodos Genéricos</strong></li></ol><ol type="1" id="169d7754-8480-8036-a998-c252cf4acc7c" class="numbered-list" start="6"><li><strong>Extensiones de Genéricos</strong></li></ol><ol type="1" id="169d7754-8480-80d9-a993-d225483a169f" class="numbered-list" start="7"><li><strong>Delegación con Genéricos</strong></li></ol><ol type="1" id="169d7754-8480-808f-bcca-c52fc73376cf" class="numbered-list" start="8"><li><strong>Colecciones y Genéricos</strong></li></ol><ol type="1" id="169d7754-8480-8031-af19-d3a790acaba4" class="numbered-list" start="9"><li><strong>Valores Predeterminados en Genéricos</strong></li></ol><ol type="1" id="169d7754-8480-80c1-821b-f3011518bc20" class="numbered-list" start="10"><li><strong>Uso Avanzado: Protocolo con Genéricos</strong></li></ol><hr id="14ed7754-8480-80e7-b59e-d882afa871bc"/><h1 id="14ed7754-8480-800c-84b4-f6b959ed92f7" class=""><mark class="highlight-orange"><strong>Opaque and Boxed Protocol Types</strong></mark></h1><ol type="1" id="169d7754-8480-8027-9b32-fad8e0cf4e6d" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Tipos Opacos (Opaque Types)</strong></mark></li></ol><ol type="1" id="169d7754-8480-80c6-9450-e5428e9dd413" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Protocolos Empaquetados (Boxed Protocol Types o Existential Types)</strong></mark></li></ol><ol type="1" id="169d7754-8480-800b-a0bc-caa70cf59d6f" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Diferencias Principales</strong></mark></li></ol><hr id="14ed7754-8480-8098-bea8-f0ba2e98bd42"/><h1 id="14ed7754-8480-80d3-8bd9-de7a7d6ec861" class=""><mark class="highlight-orange"><strong>Automatic Reference Counting</strong></mark></h1><ol type="1" id="169d7754-8480-807f-a41f-e198d6767f81" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Cómo funciona ARC</strong></mark></li></ol><ol type="1" id="169d7754-8480-8007-b1b7-f07bbcd2480c" class="numbered-list" start="2"><li><mark class="highlight-default"><strong>Retain Cycles (Ciclos de Retención)</strong></mark></li></ol><ol type="1" id="169d7754-8480-80c9-9b31-f28a46c798d9" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Referencias débiles (weak) y sin propietario (unowned)</strong></mark></li></ol><ol type="1" id="169d7754-8480-806d-a9b8-d2f2d4f37811" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Usos comunes de ARC</strong></mark></li></ol><hr id="14ed7754-8480-805f-a1cd-fe7c4be12568"/><h1 id="14ed7754-8480-8043-a26a-d0f6dd6a4afe" class=""><mark class="highlight-orange"><strong>Memory Safety</strong></mark></h1><ol type="1" id="14ed7754-8480-8067-a69b-cc0cce85aae8" class="numbered-list" start="1"><li><strong>Propiedad de la Memoria (Ownership)</strong></li></ol><ol type="1" id="170d7754-8480-8060-9c0e-da948e73126e" class="numbered-list" start="2"><li><strong>Copy-on-Write (COW)</strong></li></ol><ol type="1" id="169d7754-8480-809e-94ec-d7594e387b22" class="numbered-list" start="3"><li><strong>ARC (Automatic Reference Counting)</strong></li></ol><ol type="1" id="170d7754-8480-80cb-b51f-f4abdb757c0f" class="numbered-list" start="4"><li><strong>Valores inmutables y seguridad de hilos</strong></li></ol><ol type="1" id="170d7754-8480-8013-a8c8-f9750ebf97cb" class="numbered-list" start="5"><li><strong>Uso de Unsafe y punteros</strong></li></ol><ol type="1" id="170d7754-8480-80bb-ad0f-fba24841366e" class="numbered-list" start="6"><li><strong>Usos prácticos de la seguridad de memoria</strong></li></ol><hr id="14ed7754-8480-8057-9de8-cf28e1ba4321"/><h1 id="14ed7754-8480-80f5-a0a8-f5d8a25c0c5d" class=""><mark class="highlight-orange"><strong>Access Control</strong></mark></h1><ol type="1" id="14ed7754-8480-8099-9331-d4fdd6b2efef" class="numbered-list" start="1"><li><strong>Niveles de Access Control en Swift</strong></li></ol><ol type="1" id="170d7754-8480-80d0-a076-f538a67a8472" class="numbered-list" start="2"><li><strong>Usos comunes de Access Control</strong></li></ol><hr id="14ed7754-8480-8059-a8d1-e38df4f0aec0"/><p id="14ed7754-8480-8017-8832-d4d409c23777" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
